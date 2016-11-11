@@ -14,7 +14,7 @@ validate() {
 new_version=0.5.0
 echo "This script will upgrade your Harbor instance to $new_version, please make sure you've taken snapshot before continueing"
 read -p "Please input y to continue, other keys to exit:" ans
-if [ $ans != "y" ]; then
+if [ "$ans" != "y" ]; then
     echo "Exiting..."
     exit 0
 fi
